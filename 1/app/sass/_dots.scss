@@ -1,0 +1,31 @@
+.dots {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+
+    &__li {
+        margin: 0 6px;
+    }
+    & button {
+        background-color: $active-regular;
+        opacity: 0.2;
+        border-radius: 16px;
+        width: 16px;
+        height: 16px;
+        border: none;
+        cursor: pointer;
+        font-size: 0;
+    }
+    & button.current {
+        background-color: $active-regular;
+        opacity: 1;
+    }
+}
+
+@media (min-width: 768px) {
+
+    .dots {
+        grid-column: 1 / 5;
+    }
+}

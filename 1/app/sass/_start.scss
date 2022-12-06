@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1380px;
+    min-width: 375px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.body {
+    font-family: 'Montserrat', 'Arial', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+}
+
+
+.color {
+    background: url(../img/symbol.svg) no-repeat center top,
+                $gradient;
+    background-size: 523px 600px, cover;
+    position: relative;
+    border-radius: 0px 0px 12px 12px;
+
+    &::after {
+    content: '';
+    background-color: $shadow1;
+    height: 10px;
+    position: absolute;
+    bottom: -10px;
+    left: 10px;
+    right: 20px;
+    border-radius: 0px 0px 12px 12px;
+    }
+
+    &::before {
+    content: '';
+    background-color: $shadow2;
+    height: 10px;
+    position: absolute;
+    bottom: -20px;
+    left: 40px;
+    right: 40px;
+    width: calc(100% - 80px);
+    border-radius: 0px 0px 12px 12px;
+    }
+}
+
+.white {
+    background-color: $basic-home;
+
+    &_mb {
+        padding-top: 14px;
+    }
+}
+
+
+.grey {
+    background-color: $grey-bg;
+
+    &_about {
+        padding-top: 35px;
+    }
+    &_footer {
+        padding-top: 15px;
+    }
+}
+
+@media (min-width: 768px) {
+    .color {
+        background-size: 893px 1024px, cover;
+    }
+    .grey {
+        &_about {
+            padding-top: 20px;
+        }
+        &_footer {
+            padding-top: 25px;
+        }
+        &_home {
+            padding-top: 30px;
+        }
+    }
+    .white {
+        background-color: $basic-home;
+
+        &_sd {
+            padding-top: 47px;
+        }
+    }
+
+}
+
+@media (min-width: 992px) {
+    .color {
+        background-size: 698px 766px, cover;
+    }
+}
+
+@media (min-width: 1200px) {
+    .color {
+        background-size: 697px 799px, cover;
+    }
+    .grey_about {
+        padding-top: 45px;
+    }
+}

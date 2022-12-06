@@ -1,0 +1,95 @@
+.modal {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    overflow: auto;
+    background-color: $background;
+
+    &_active {
+        /*display: block;*/
+        visibility: visible;
+        opacity: 1;
+        transition: .3s;
+        z-index: 1;
+    }
+
+    &__body_about {
+        padding: 12px;
+        min-width: 375px;
+        background-color: $basic-home;
+        margin: 100px auto 0;
+    }
+    &__body_home {
+        padding: 12px;
+        min-width: 375px;
+        background-color: $regular;
+        margin: 100px auto 0;
+    }
+    &__menu_about {
+        list-style: none;
+        padding-left: 0;
+        display: flex;
+        flex-direction: column;
+    }
+    &__link_about {
+        margin-top: 15px;
+        width: 351px;
+        height: 43px;
+        background: $grey-bg;
+        border-radius: 12px;
+        text-align: center;
+        padding: 7px 0px;
+        &:hover {
+            background-color: $grey-separator;
+        }
+        & a {
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 29px;
+            text-decoration: none;
+            color: $active-regular;
+            &:active {
+                color: $accent;
+            }
+        }
+    }
+
+    &__menu_home {
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        padding-left: 0;
+    }
+    &__link_home {
+        margin-top: 15px;
+        width: 351px;
+        height: 43px;
+        background: $grey-bg;
+        border-radius: 12px;
+        text-align: center;
+        padding: 7px 0px;
+        &:hover {
+            background-color: $grey-separator;
+        }
+        & a {
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 29px;
+            text-decoration: none;
+            color: $regular;
+            &:active {
+                color: $accent;
+            }
+        }
+
+        &:hover {
+            background-color: $grey-separator;
+            border-radius: 8px;
+            padding: 10px 7px;
+        }
+    }
+
+}

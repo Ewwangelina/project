@@ -1,0 +1,71 @@
+.servises {
+
+    &-link {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: $active-regular;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+            &::after {
+                content: '';
+                background-image: url(../img/img-home/arrow-servises.svg);
+                background-position: center center;
+                background-repeat: no-repeat;
+                height: 12px;
+                width: 12px;
+                margin: 0 2px;
+            }
+    }
+    &-title {
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 37px;
+        background: $gradient-red-text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
+
+@media (min-width: 768px) {
+
+    .servises {
+        grid-column: 1 / 4;
+        grid-row: 2 / 3;
+    }
+    .services_tm {
+        grid-column: 1;
+        grid-row: 2 / 3;
+    }
+    .services_pub {
+        grid-column: 1/ 3;
+        grid-row: 1 / 2;
+    }
+    .servises-title {
+        font-weight: 700;
+        font-size: 38px;
+        line-height: 46px;
+    }
+}
+
+@media (min-width: 992px) {
+
+    .servises {
+        grid-column: 1 / 4;
+        grid-row: 2 / 3;
+    }
+    .services_tm {
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+    }
+    .services_pub {
+        grid-column: 1/ 3;
+        grid-row: 1 / 2;
+    }
+}

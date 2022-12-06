@@ -1,0 +1,103 @@
+.team {
+    background-color: $grey-bg;
+    border-radius: 12px;
+    padding: 30px;
+    margin: 30px 15px 20px;
+
+    &-name {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 20px;
+        color: $grey-text;
+        margin-top: 30px;
+    }
+    &-prof {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 22px;
+        color: $grey-text;
+        margin-top: 6px;
+    }
+    &-img {
+        background-image: url(../img/img-home/team.png);
+        background-color: $grey-bg-alt;
+        background-repeat: no-repeat;
+        background-position: center top;
+        border-radius: 12px 12px 0 0;
+        margin: -30px -30px 30px -30px;
+        height: 500px;
+        background-size: cover;
+    }
+}
+@media (min-width: 768px) {
+
+    .team {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 500px 1fr 50px 26px;
+        margin: 30px 15px 22px;
+
+        &-name {
+            grid-column: 1;
+            grid-row: 3 / 4;
+        }
+
+        &-prof {
+            grid-column: 1;
+            grid-row: 4 / 5;
+        }
+        &-img {
+            grid-column: 1 / 4;
+            grid-row: 1 / 2;
+        }
+    }
+}
+
+@media (min-width: 992px) {
+
+    .team {
+        grid-template-columns: min-content 1fr;
+        grid-template-rows: 1fr;
+        column-gap: 30px;
+        margin: 43px 15px 24px;
+
+        &-name {
+            grid-column: 2 / 3;
+            grid-row: 3 / 4;
+            margin-top: 24px;
+        }
+        &-prof {
+            grid-column: 2 / 3;
+            grid-row: 4 / 5;
+        }
+        &-img {
+            grid-column: 1 / 2;
+            grid-row: 1 / 5;
+            border-radius: 12px 0 0 12px;
+            margin: -30px 0 -30px -30px;
+            width: 400px;
+            height: 524px;
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+
+    .team {
+        grid-template-columns: min-content 1fr;
+
+        &-name {
+            grid-column: 2 / 3;
+            grid-row: 3 / 4;
+        }
+        &-prof {
+            grid-column: 2 / 3;
+            grid-row: 4 / 5;
+        }
+        &-img {
+            grid-column: 1 / 2;
+            grid-row: 1 / 5;
+            height: 400px;
+        }
+    }
+}

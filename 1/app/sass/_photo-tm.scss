@@ -1,0 +1,61 @@
+.photo-tm {
+    background-image: url(../img/img-about/photo-mb.png);
+    background-color: $grey-text;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    padding: 35px 0;
+    margin: 0 -15px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+    text-align: center;
+    letter-spacing: 13px;
+    text-transform: uppercase;
+    color: $basic-home;
+    opacity: 0.8;
+    text-shadow: 0px 15px 30px rgba(40, 40, 86, 0.8);
+}
+
+@media (min-width: 768px) {
+
+    .photo-tm {
+        background-image: url(../img/img-about/photo-sd.png);
+        background-size: cover;
+        padding: 89px 0;
+        width: 768px;
+        margin: 0 -45px;
+        font-weight: 700;
+        font-size: 46px;
+        line-height: 56px;
+        letter-spacing: 63px;
+    }
+}
+
+@media (min-width: 992px) {
+
+    .photo-tm {
+        background-image: url(../img/img-about/photo-hd.png);
+        background-size: cover;
+        width: 1024px;
+        padding: 103px 0;
+        font-weight: 700;
+        font-size: 86px;
+        line-height: 105px;
+    }
+}
+
+@media (min-width: 1200px) {
+
+    .photo-tm {
+        background-image: url(../img/img-about/photo-dectop.jpg);
+        background-size: cover;
+        width: 1440px;
+        padding: 163px 0;
+        font-weight: 700;
+        font-size: 96px;
+        line-height: 117px;
+        margin-bottom: 60px;
+    }
+}
+
