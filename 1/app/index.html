@@ -281,12 +281,46 @@
     </div>
 
 
-    <div class="contact-form">
-        <form action="mailto:contact@forstudy.space">
-
-
+    <div class="contact contact_active">
+        <form class="contact_body" action="mailto:contact@forstudy.space">
+            <div class="contact__title-form">
+                <p class="contact__title">We would like to help you</p>
+                <button type="button" class="contact__close">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7 7L25 25" stroke="#EC6F5D" stroke-width="2" />
+                        <path d="M25 7L7 25" stroke="#EC6F5D" stroke-width="2" />
+                    </svg>
+                </button>
+            </div>
+            <div class="contact__row">
+                <input type="text" class="contact__text" name="name" placeholder="Name" required>
+            </div>
+            <div class="contact__row">
+                <input type="text" class="contact__text contact__text_m" name="message" placeholder="Message">
+            </div>
+            <div class="contact__title2-form">
+                <p class="contact__title2">How to answer you?</p>
+            </div>
+            <div class="contact__row">
+                <div class="contact__number">
+                    <input name="phone" type="tel" class="contact__text" placeholder="Phone number">
+                </div>
+                <div class="contact__row">
+                    <div class="contact__mail">
+                        <input type="text" class="contact__text" id="email" name="email" placeholder="Email">
+                    </div>
+                </div>
+            </div>
+            <div class="contact__row contact__row_s">
+                <div class="contact__send">
+                    <input type="submit" name="submit" class="contact__btn" value="Send message">
+                    <input type="hidden" name="formData" value="Заявка с сайта">
+                </div>
+            </div>
         </form>
     </div>
+
+
 
 
 

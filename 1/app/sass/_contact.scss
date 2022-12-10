@@ -1,0 +1,122 @@
+.contact {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    overflow: auto;
+    background-color: $background;
+    margin: 30px;
+
+    &_body {
+        display: block;
+        clear: both;
+        margin: 20px auto;
+        max-width: 650px;
+        padding: 30px;
+        resize: vertical;
+        overflow: auto;
+        background-color: $grey-bg;
+    }
+    &_active {
+        /*display: block;*/
+        visibility: visible;
+        opacity: 1;
+        transition: .3s;
+        z-index: 1;
+    }
+    &__title-form {
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+    }
+    &__title2-form {
+        display: flex;
+        flex-direction: column;
+    }
+    &__title {
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 37px;
+        background: $gradient-red-text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    &__close {
+        background-color: transparent;
+        border: none;
+    }
+
+    &__text {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 26px;
+        color: $grey-text;
+        padding: 15px;
+        gap: 10px;
+        width: 100%;
+        height: 56px;
+        background: $basic-home;
+        border: 1px solid $basic-home;
+        border-radius: 8px;
+    }
+    &__text_m {
+        height: 130px;
+        padding-bottom: 79px;
+    }
+    &__row {
+        margin: 15px 0;
+    }
+    &__row_s {
+        margin: 0;
+    }
+    &__title2 {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: $grey-text;
+        padding-top: 30px;
+        padding-bottom: 15px;
+    }
+    &__btn {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 20px;
+        text-align: center;
+        color: $basic-home;
+        background-color: $active-regular;
+        box-shadow: 0px 0px 20px rgba(36, 163, 255, 0.5);
+        border-radius: 12px;
+        padding: 18px;
+        border: transparent;
+        width: 100%;
+    }
+    &__send {
+        margin: 30px 0 0;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
