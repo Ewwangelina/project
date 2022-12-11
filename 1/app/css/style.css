@@ -611,9 +611,7 @@
   line-height: 26px;
   color: #B3B3BA;
   padding: 15px;
-  gap: 10px;
   width: 100%;
-  height: 56px;
   background: #FFFFFF;
   border: 1px solid #FFFFFF;
   border-radius: 8px;
@@ -621,7 +619,12 @@
 
 .contact__text_m {
   height: 130px;
-  padding-bottom: 79px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #B3B3BA;
 }
 
 .contact__row {
