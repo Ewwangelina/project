@@ -565,6 +565,7 @@
   -webkit-transition: .3s;
   transition: .3s;
   z-index: 1;
+  margin: 0;
 }
 
 .contact__title-form {
@@ -2083,6 +2084,7 @@
 }
 
 .footer__mail {
+  position: relative;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
